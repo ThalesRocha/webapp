@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+		xmlns:f="http://java.sun.com/jsf/core" 
+		xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>JSF 2.0 Hello World</title>
+</h:head>
+<h:body>
+
+    <form action="Servlet" id="Servlet">
+        Nome:
+        <input type="text" name="nome" size="41" />
+        <br />
+        <br />
+        <textarea rows="4" cols="50" name="observacao">
+            Insira seu texto aqui...</textarea>
+        <br />
+        <br />
+        <label>
+            <input type="radio" name="avaliacao" value="Ruim" /> Ruim</label>
+        <label>
+            <input type="radio" name="avaliacao" value="Medio" /> Medio</label>
+        <label>
+            <input type="radio" name="avaliacao" value="Bom" /> Bom</label>
+        <label>
+            <input type="radio" name="avaliacao" value="Otimo" /> Otimo</label>
+        <br />
+        <br />
+        <label>
+            <input type="checkbox" name="tecnologia" value="Web" /> Web
+        </label>
+        <label>
+            <input type="checkbox" name="tecnologia" value="Desktop" /> Desktop</label>
+        <label>
+            <input type="checkbox" name="tecnologia" value="Mobile" /> Mobile</label>
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+    </form>
+</h:body>
+
+</html>
