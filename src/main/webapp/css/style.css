@@ -1,7 +1,12 @@
 @CHARSET "ISO-8859-1";
 
-h2 {
+h4 {
+	margin-bottom:0em;
 	color: blue;
+}
+
+h2{
+	color: red;
 }
 
 table, th, td {
@@ -12,4 +17,8 @@ thead {
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
+}
+
+p{
+	margin: 0px;
 }

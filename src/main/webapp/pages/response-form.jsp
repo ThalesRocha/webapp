@@ -1,26 +1,45 @@
-<%@ taglib prefix="c" 
-           uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <title>Successful Submit</title>
 </head>
 
 <body>
 
-	<h1>
+	<h2>Resultado</h2>
+	<h4 class="titulo_topicos">Nome:</h4>
+	<p>
 		<%
 			out.print(request.getAttribute("nome"));
 		%>
-	</h1>
+	</p>
 
-	<h1>
+	<h4 class="titulo_topicos">Observação:</h4>
+	<p>
 		<%
-		String[] teste = (String[]) request.getAttribute("tecnologias");
-		for( String string : teste)
-			out.print(string);
+			out.print(request.getAttribute("observacao"));
 		%>
-	</h1>
+	</p>
+
+	<h4 class="titulo_topicos">Area(s) preferida(s):</h4>
+	<p>
+		<%
+			String[] teste = (String[]) request.getAttribute("tecnologias");
+			for (String string : teste) {
+				out.print(string);
+		%><br>
+		<%
+			}
+		%>
+	</p>
+
+	<h4 class="titulo_topicos">Nota:</h4>
+	<p>
+		<%
+			out.print(request.getAttribute("avaliacao"));
+		%>
+	</p>
 
 
 </body>
